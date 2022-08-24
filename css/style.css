@@ -40,7 +40,7 @@ nav {
 }
 
 .banner {
-    height: 80vh;
+    height: 70vh;
     background-image: url(/img/hero-image.jpg);
     background-size: cover;
     display: flex;
@@ -67,9 +67,13 @@ nav {
 
 .text {}
 
-.text>h2 {}
+.text>h2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
 .text>p{
-    font-weight: 400;
+    font-size: x-large;
+    margin-bottom: 7vh;
 }
 
 .imgGall {
@@ -105,8 +109,8 @@ nav {
 .basic {
     background-size: cover;
     background-position: center;
-    height: 30vh;
-    width: 20vw;
+    height: 35vh;
+    width: 26vw;
 }
 
 .small {
