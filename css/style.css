@@ -1,0 +1,141 @@
+:root {
+    --yellow: #e6a84e;
+    --white: #ffffff;
+    --gray: #dcdfe9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    padding: 10px;
+    background-color: var(--yellow);
+}
+
+.navLogo {
+    padding: 5px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink,
+.navLink>a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.banner {
+    height: 80vh;
+    background-image: url(/img/hero-image.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bannerText {
+    background-color: var(--white);
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.container {
+    /* padding-left: 7vw;
+    padding-right: 7vw; */
+    padding: 7vh 7vw 7vh 7vw;
+}
+
+.container:nth-child(even) {
+    background-color: var(--gray);
+}
+
+.text {}
+
+.text>h2 {}
+.text>p{
+    font-weight: 400;
+}
+
+.imgGall {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 2vh;
+}
+
+.imageCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 5px; */
+}
+
+#imageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 500;
+    background-color: var(--white);
+}
+
+#imageBox>p {
+    font-size: 2vh;
+    padding: 5px;
+}
+
+.basic {
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 20vw;
+}
+
+.small {
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 19vw;
+    background-color: var(--white);
+}
+
+.plus {
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 20vw;
+    border: 7px solid var(--gray);
+}
+
+footer {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    padding: 5px;
+}
+
+footer>span>a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
