@@ -2,6 +2,8 @@
     --yellow: #e6a84e;
     --white: #ffffff;
     --gray: #dcdfe9;
+    --red: rgb(154,59,43);
+    --black: #000000;
 }
 
 * {
@@ -16,10 +18,10 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
-    padding: 10px;
+    padding: 10px 7vw 10px 7vw;
     background-color: var(--yellow);
 }
 
@@ -36,26 +38,38 @@ nav {
 .navLink>a {
     text-decoration: none;
     padding: 5px;
-    color: black;
+    color: var(--black);
 }
 
 .banner {
     height: 70vh;
-    background-image: url(/img/hero-image.jpg);
-    background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+}
 
+#home {
+    background-image: url(/img/hero-image.jpg);
+    background-size: cover;
+}
+
+#burger {
+    background-image: url(/img/bengal-burger-2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .bannerText {
     background-color: var(--white);
     font-size: xx-large;
-    padding: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10vh;
+    margin-right: 15vw;
 }
 
-.container {
+.container, .container-reverse {
     /* padding-left: 7vw;
     padding-right: 7vw; */
     padding: 7vh 7vw 7vh 7vw;
@@ -64,14 +78,35 @@ nav {
 .container:nth-child(even) {
     background-color: var(--gray);
 }
+.container-reverse:nth-child(odd){
+    background-color: var(--gray);
+}
 
 .text {}
-
+.red{
+    color: var(--red);
+}
+.btn{
+    border-radius: 50px;
+    text-decoration: none;
+}
+.clear-btn{
+    padding: 10px;
+    background-color: var(--white);
+    color: var(--gray);
+    /* border: 2px solid var(--gray); */
+}
+.red-btn{
+    padding: 10px;
+    background-color: var(--red);
+    color: var(--white);
+}
 .text>h2 {
     font-size: xx-large;
     margin-bottom: 10px;
 }
-.text>p{
+
+.text>p {
     font-size: x-large;
     margin-bottom: 7vh;
 }
@@ -101,8 +136,12 @@ nav {
     background-color: var(--white);
 }
 
+#imageBox:hover {
+    background-color: var(--yellow);
+}
+
 #imageBox>p {
-    font-size: 2vh;
+    font-size: 2.5vh;
     padding: 5px;
 }
 
@@ -132,14 +171,14 @@ nav {
 footer {
     background-color: var(--yellow);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
-    padding: 5px;
+    padding: 10px 7vw 10px 7vw;
 }
 
 footer>span>a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
     padding: 5px;
 }
