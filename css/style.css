@@ -2,6 +2,7 @@
     --yellow: #e6a84e;
     --white: #ffffff;
     --gray: #dcdfe9;
+    --gray2: #575656;
     --red: rgb(154,59,43);
     --black: #000000;
 }
@@ -80,6 +81,12 @@ nav {
 }
 .container-reverse:nth-child(odd){
     background-color: var(--gray);
+}
+.recipie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .text {}
@@ -168,6 +175,29 @@ nav {
     border: 7px solid var(--gray);
 }
 
+.grayBox{
+    background-color: var(--gray);
+    padding: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+    color: var(--gray2);
+    font-size: x-large;
+}
+
+.instructions{
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+.ingredients{
+    min-width: 30%;
+    max-width: 30%;
+}
+.directions{
+    min-width: 50%;
+    max-width: 60%;
+}
 footer {
     background-color: var(--yellow);
     display: flex;
