@@ -3,7 +3,7 @@
     --white: #ffffff;
     --gray: #dcdfe9;
     --gray2: #575656;
-    --red: rgb(154,59,43);
+    --red: rgb(154, 59, 43);
     --black: #000000;
 }
 
@@ -24,6 +24,17 @@ nav {
     height: 10vh;
     padding: 10px 7vw 10px 7vw;
     background-color: var(--yellow);
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+td {
+    /* top | right | bottom | left */
+    font-size: large;
+    padding: 10px 10vw 10px 0px;
 }
 
 .navLogo {
@@ -67,10 +78,11 @@ nav {
     padding-left: 10px;
     padding-right: 10px;
     margin: 10vh;
-    margin-right: 15vw;
+    /* margin-right: 15vw; */
 }
 
-.container, .container-reverse {
+.container,
+.container-reverse {
     /* padding-left: 7vw;
     padding-right: 7vw; */
     padding: 7vh 7vw 7vh 7vw;
@@ -79,35 +91,46 @@ nav {
 .container:nth-child(even) {
     background-color: var(--gray);
 }
-.container-reverse:nth-child(odd){
+
+.container-reverse:nth-child(odd) {
     background-color: var(--gray);
 }
-.recipie{
+
+.recipie {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.text {}
-.red{
+.text {
+    margin: 0;
+    padding: 0;
+}
+
+.red {
     color: var(--red);
 }
-.btn{
+
+.btn {
     border-radius: 50px;
     text-decoration: none;
 }
-.clear-btn{
+
+.clear-btn {
     padding: 10px;
     background-color: var(--white);
     color: var(--gray);
     /* border: 2px solid var(--gray); */
 }
-.red-btn{
-    padding: 10px;
+
+.red-btn {
+    padding: 15px;
     background-color: var(--red);
     color: var(--white);
+    font-size: small;
 }
+
 .text>h2 {
     font-size: xx-large;
     margin-bottom: 10px;
@@ -175,29 +198,55 @@ nav {
     border: 7px solid var(--gray);
 }
 
-.grayBox{
+.grayBox {
     background-color: var(--gray);
-    padding: 20px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    /* top | right | bottom | left */
+    padding: 4vh 10vw 4vh 10vw;
+    /* padding-left: 10vw;
+    padding-right: 10vw; */
     text-align: center;
     color: var(--gray2);
     font-size: x-large;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
-.instructions{
+.instructions {
     text-align: left;
     display: flex;
     justify-content: space-around;
 }
-.ingredients{
+
+.ingredients {
     min-width: 30%;
     max-width: 30%;
 }
-.directions{
+
+.directions {
     min-width: 50%;
     max-width: 60%;
 }
+
+@media screen and (max-width: 950px) {
+    .instructions {
+        text-align: left;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ingredients {
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+
+    .directions {
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+}
+
 footer {
     background-color: var(--yellow);
     display: flex;
