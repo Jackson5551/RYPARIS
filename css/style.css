@@ -156,7 +156,7 @@ td {
     /* margin: 5px; */
 }
 
-#imageBox {
+.imageBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,11 +166,11 @@ td {
     background-color: var(--white);
 }
 
-#imageBox:hover {
+.imageBox:hover {
     background-color: var(--yellow);
 }
 
-#imageBox>p {
+.imageBox>p {
     font-size: 2.5vh;
     padding: 5px;
 }
@@ -245,6 +245,12 @@ td {
         margin: 10px 0 10px 0;
         width: 100%;
     }
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
