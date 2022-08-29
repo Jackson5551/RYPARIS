@@ -1,0 +1,263 @@
+:root {
+    --yellow: #e6a84e;
+    --white: #ffffff;
+    --gray: #dcdfe9;
+    --gray2: #575656;
+    --red: rgb(154, 59, 43);
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 10px 7vw 10px 7vw;
+    background-color: var(--yellow);
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+td {
+    /* top | right | bottom | left */
+    font-size: large;
+    padding: 10px 10vw 10px 0px;
+}
+
+.navLogo {
+    padding: 5px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink,
+.navLink>a {
+    text-decoration: none;
+    padding: 5px;
+    color: var(--black);
+}
+
+.banner {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#home {
+    background-image: url(/img/hero-image.jpg);
+    background-size: cover;
+}
+
+#burger {
+    background-image: url(/img/bengal-burger-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerText {
+    background-color: var(--white);
+    font-size: xx-large;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10vh;
+    /* margin-right: 15vw; */
+}
+
+.container,
+.container-reverse {
+    /* padding-left: 7vw;
+    padding-right: 7vw; */
+    padding: 7vh 7vw 7vh 7vw;
+}
+
+.container:nth-child(even) {
+    background-color: var(--gray);
+}
+
+.container-reverse:nth-child(odd) {
+    background-color: var(--gray);
+}
+
+.recipie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    color: var(--red);
+}
+
+.btn {
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.clear-btn {
+    padding: 10px;
+    background-color: var(--white);
+    color: var(--gray);
+    /* border: 2px solid var(--gray); */
+}
+
+.red-btn {
+    padding: 15px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: small;
+}
+
+.text>h2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.text>p {
+    font-size: x-large;
+    margin-bottom: 7vh;
+}
+
+.imgGall {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 2vh;
+}
+
+.imageCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 5px; */
+}
+
+#imageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 500;
+    background-color: var(--white);
+}
+
+#imageBox:hover {
+    background-color: var(--yellow);
+}
+
+#imageBox>p {
+    font-size: 2.5vh;
+    padding: 5px;
+}
+
+.basic {
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    width: 26vw;
+}
+
+.small {
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 19vw;
+    background-color: var(--white);
+}
+
+.plus {
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 20vw;
+    border: 7px solid var(--gray);
+}
+
+.grayBox {
+    background-color: var(--gray);
+    /* top | right | bottom | left */
+    padding: 4vh 10vw 4vh 10vw;
+    /* padding-left: 10vw;
+    padding-right: 10vw; */
+    text-align: center;
+    color: var(--gray2);
+    font-size: x-large;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.instructions {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ingredients {
+    min-width: 30%;
+    max-width: 30%;
+}
+
+.directions {
+    min-width: 50%;
+    max-width: 60%;
+}
+
+@media screen and (max-width: 950px) {
+    .instructions {
+        text-align: left;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ingredients {
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+
+    .directions {
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 10px 7vw 10px 7vw;
+}
+
+footer>span>a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 5px;
+}
