@@ -2,34 +2,34 @@
 Setting the bacground images of the image card divs
 */
 #breakfast {
-    background-image: url("/img/breakfast-ideas.jpg");
+    background-image: url(../img/breakfast-ideas.jpg);
 }
 
 #vegetarian {
-    background-image: url("/img/vegetarian-ideas.jpg");
+    background-image: url(../img/vegetarian-ideas.jpg);
 }
 
 #coldWeather {
-    background-image: url("/img/cold-weather-dinners.jpeg");
+    background-image: url(../img/cold-weather-dinners.jpeg);
 }
 #fajita{
-    background-image: url("/img/fajita-peppers.jpeg");
+    background-image: url(../img/fajita-peppers.jpeg);
 }
 #muffins{
-    background-image: url("/img/muffins.jpeg");
+    background-image: url(../img/muffins.jpeg);
 }
 #eggplant{
-    background-image: url("/img/eggplant-parmesan.jpg");
+    background-image: url(../img/eggplant-parmesan.jpg);
 }
 #chicken{
-    background-image: url("/img/teriyaki-chicken.jpeg");
+    background-image: url(../img/teriyaki-chicken.jpeg);
 }
 #bestSandwich{
-    background-image: url("/img/burger.jpg");
+    background-image: url(../img/burger.jpg);
 }
 #statesOfPizza{
-    background-image: url("/img/pizza.jpeg");
+    background-image: url(../img/pizza.jpeg);
 }
 #cityGuides{
-    background-image: url("/img/city.jpg");
+    background-image: url(../img/city.jpg);
 }
