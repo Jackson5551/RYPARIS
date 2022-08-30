@@ -51,7 +51,28 @@ td {
     text-decoration: none;
     padding: 5px;
     color: var(--black);
+    transition: 1.3s;
+    position: relative;
 }
+
+.navbarAnimation:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .2s ease, background-color .2s ease, left .2s ease;
+}
+
+.navbarAnimation:hover::after {
+    width: 40%;
+    left: 30%;
+    background: var(--black);
+}
+
+/* .navLink>a:hover {} */
 
 .banner {
     height: 70vh;
@@ -246,7 +267,8 @@ td {
         width: 100%;
     }
 }
-.video{
+
+.video {
     display: flex;
     flex-direction: column;
     justify-content: center;
