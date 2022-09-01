@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 13vh;
     padding: 10px 7vw 10px 7vw;
     background-color: var(--yellow);
 }
@@ -39,11 +39,14 @@ td {
 
 .navLogo {
     padding: 5px;
+    display: flex;
+
 }
 
 .navLinks {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .navLink,
@@ -250,6 +253,10 @@ td {
 }
 
 @media screen and (max-width: 950px) {
+    nav {
+        height: 16vh;
+    }
+
     .instructions {
         text-align: left;
         display: flex;
@@ -267,9 +274,13 @@ td {
         margin: 10px 0 10px 0;
         width: 100%;
     }
+    iframe{
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 1350px) {
+
     .imgGall {
         display: flex;
         flex-wrap: wrap;
@@ -297,6 +308,7 @@ td {
         font-size: larger;
         font-weight: 500;
         background-color: var(--white);
+        margin: 10px;
     }
 
     .basic {
@@ -304,6 +316,7 @@ td {
         background-position: center;
         /* height: 35vh; */
         width: 100%;
+        min-width: 350px;
     }
 
     .small {
@@ -311,6 +324,7 @@ td {
         background-position: center;
         /* height: 25vh; */
         width: 100%;
+        min-width: 250px;
         background-color: var(--white);
     }
 
@@ -319,6 +333,7 @@ td {
         background-position: center;
         /* height: 30vh; */
         width: 100%;
+        min-width: 300px;
         border: 7px solid var(--gray);
     }
 }
