@@ -1,7 +1,9 @@
 :root {
     --yellow: #e6a84e;
     --white: #ffffff;
+    --white-rgba: rgb(255, 255, 255, 0.9);
     --gray: #dcdfe9;
+    --gray-rgba: rgb(220, 223, 233, 0.9);
     --gray2: #575656;
     --red: rgb(154, 59, 43);
     --black: #000000;
@@ -15,6 +17,21 @@
 body {
     font-family: sans-serif;
     font-family: 'Poppins', sans-serif;
+}
+
+.mainBG {
+    background-attachment: fixed;
+    background-image: url(../img/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.recipeBG {
+    background-attachment: fixed;
+    background-image: url(../img/burger3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 nav {
@@ -82,9 +99,10 @@ td {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    background-attachment: fixed;
 }
 
-#home {
+/* #home {
     background-image: url(../img/hero-image.jpg);
     background-size: cover;
 }
@@ -93,7 +111,7 @@ td {
     background-image: url(../img/bengal-burger-2.jpg);
     background-size: cover;
     background-position: center;
-}
+} */
 
 .bannerText {
     background-color: var(--white);
@@ -113,14 +131,22 @@ td {
 }
 
 .container:nth-child(even) {
-    background-color: var(--gray);
+    background-color: var(--gray-rgba);
+}
+
+.container:nth-child(odd) {
+    background-color: var(--white);
 }
 
 .container-reverse:nth-child(odd) {
     background-color: var(--gray);
 }
 
-.recipe{
+.container-reverse:nth-child(even) {
+    background-color: var(--white-rgba);
+}
+
+.recipe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,7 +169,6 @@ td {
 
 .clear-btn {
     padding: 10px;
-    background-color: var(--white);
     color: var(--gray);
     /* border: 2px solid var(--gray); */
 }
@@ -259,17 +284,22 @@ td {
         flex-direction: column;
         justify-content: center;
     }
-    .navLinks{
+
+    .navLinks {
         display: flex;
         justify-content: center;
     }
-    td{
+
+    td {
         display: flex;
         align-items: flex-start;
     }
-    .container, .container-reverse{
+
+    .container,
+    .container-reverse {
         padding: 3vh 3vw 3vh 3vw;
     }
+
     .instructions {
         text-align: left;
         display: flex;
@@ -289,7 +319,8 @@ td {
         width: 100%;
         min-width: 100%;
     }
-    iframe{
+
+    iframe {
         max-width: 100%;
     }
 }
