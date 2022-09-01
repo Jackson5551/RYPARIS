@@ -33,14 +33,13 @@ ol {
 
 td {
     /* top | right | bottom | left */
-    font-size: large;
+    font-size: 1.3em;
     padding: 10px 10vw 10px 0px;
 }
 
 .navLogo {
     padding: 5px;
     display: flex;
-
 }
 
 .navLinks {
@@ -121,7 +120,7 @@ td {
     background-color: var(--gray);
 }
 
-.recipie {
+.recipe{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,9 +253,23 @@ td {
 
 @media screen and (max-width: 950px) {
     nav {
-        height: 16vh;
+        height: fit-content;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
+    .navLinks{
+        display: flex;
+        justify-content: center;
+    }
+    td{
+        display: flex;
+        align-items: flex-start;
+    }
+    .container, .container-reverse{
+        padding: 3vh 3vw 3vh 3vw;
+    }
     .instructions {
         text-align: left;
         display: flex;
@@ -268,11 +281,13 @@ td {
     .ingredients {
         margin: 10px 0 10px 0;
         width: 100%;
+        min-width: 100%;
     }
 
     .directions {
         margin: 10px 0 10px 0;
         width: 100%;
+        min-width: 100%;
     }
     iframe{
         max-width: 100%;
