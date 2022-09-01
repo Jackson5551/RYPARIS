@@ -55,10 +55,11 @@ td {
     position: relative;
 }
 
+/**/
 .navbarAnimation:after {
     content: '';
     position: absolute;
-    top: 5px;
+    top: 30px;
     left: 50%;
     height: 2px;
     width: 0;
@@ -192,7 +193,7 @@ td {
 }
 
 .imageBox>p {
-    font-size: 2.5vh;
+    font-size: 1em;
     padding: 5px;
 }
 
@@ -265,6 +266,60 @@ td {
     .directions {
         margin: 10px 0 10px 0;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .imgGall {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        /* width: fit-content; */
+        margin-top: 2vh;
+    }
+
+    .imageCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* margin: 5px; */
+    }
+
+    .imageBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: 500;
+        background-color: var(--white);
+    }
+
+    .basic {
+        background-size: cover;
+        background-position: center;
+        /* height: 35vh; */
+        width: 100%;
+    }
+
+    .small {
+        background-size: cover;
+        background-position: center;
+        /* height: 25vh; */
+        width: 100%;
+        background-color: var(--white);
+    }
+
+    .plus {
+        background-size: cover;
+        background-position: center;
+        /* height: 30vh; */
+        width: 100%;
+        border: 7px solid var(--gray);
     }
 }
 
